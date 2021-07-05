@@ -108,7 +108,7 @@ function findShortestPathLength(
   }
 }
 
-let minPathLength = [9999];
+let minPathLength = [Number.MAX_SAFE_INTEGER];
 findShortestPathLength(0, 7, minPathLength, [], adj);
 console.log({
   "The least number of hops (shortest path) between A­-H": minPathLength[0],
